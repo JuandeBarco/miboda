@@ -47,6 +47,8 @@
           <li><a class="nav-link scrollto" href="#schedule">Itinerario</a></li>
           <li><a class="nav-link scrollto" href="#venue">Locaciones</a></li>
           <li><a class="nav-link scrollto" href="#supporters">Regalos</a></li>
+          <li><a class="nav-link scrollto" href="#faq">Dudas Frecuentes</a></li>
+          <li><a class="nav-link scrollto" href="#hotels">Hospedaje</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>
@@ -149,6 +151,9 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- jQuery -->
+  <script src="{{ url('js/jquery-3.6.0.min.js') }}"></script>
+
   <!-- Vendor JS Files -->
   <script src="{{ url('vendor/aos/aos.js') }}"></script>
   <script src="{{ url('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -156,9 +161,14 @@
   <script src="{{ url('vendor/swiper/swiper-bundle.min.js') }}"></script>
   <script src="{{ url('vendor/php-email-form/validate.js') }}"></script>
 
+  <!-- SweetAlert2 -->
+  <script src="{{ url('vendor/sweetalert/dist/sweetalert2.all.min.js') }}"></script>
+
   <!-- Template Main JS File -->
   <script src="{{ url('js/welcome_main.js') }}"></script>
 
+  @yield('javascript')
+  
   <script>
     // Set the date we're counting down to
     var countDownDate = new Date("Oct 22, 2022 19:00:00").getTime();

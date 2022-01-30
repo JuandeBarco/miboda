@@ -7,7 +7,7 @@
       <h1 class="mb-4 pb-0">Save the date<br><span>22 ♥ 10 ♥ 2022</span></h1>
       <p class="mb-4 pb-0" id="demo"></p>
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> -->
-      <a href="#about" class="about-btn scrollto">Confirma tu asistencia</a>
+      <button class="btn about-btn scrollto" id="btn_confirmar_asistencia">Confirma tu asistencia</button>
     </div>
   </section><!-- End Hero Section -->
 
@@ -175,7 +175,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>F.A.Q </h2>
+          <h2>Dudas Frecuentes</h2>
+          <p>Cualquier otra duda referente a la boda, ¡contactanos!</p>
         </div>
 
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -183,59 +184,50 @@
 
             <ul class="faq-list">
 
-              <li>
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </p>
-                </div>
-              </li>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">¿Es necesario confirmar mi asistencia? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Si por cualquier motivo no puedes asistir a la fiesta, no te preocupes. La fiesta será para muy pocas personas, y te agradeceríamos muchisimo que nos confirmes tu asistencia (o inasistencia) lo antes posible a tráves del botón "Confirmar asistencia", que se encuentra en la parte superior de la página.
+                        </p>
+                    </div>
+                  </li>
 
-              <li>
-                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </p>
-                </div>
-              </li>
+                <li>
+                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">¿Cuál es mi código de invitado?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Es un código de cinco digitos aleatorios que te compartimos en la invitación digital de la boda. Si tienes problemas identificandolo, puedes contactar a cualquiera de los novios, y con gusto te ayudaremos.
+                        </p>
+                    </div>
+                </li>
 
-              <li>
-                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </p>
-                </div>
-              </li>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">¿Por qué necesito registrar mi correo para confirmar mi asistencia?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Necesitamos tu correo para que el sistema (hecho por el novio) pueda enviarte tus boletos. Opcionalemente puedes compartirnos tu número de celular para notificarte cualquier cosa por medio de SMS. No te preocupes, no compartiremos ningún dato tuyo con nadie.
+                        </p>
+                    </div>
+                </li>
 
-              <li>
-                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </p>
-                </div>
-              </li>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Ya confirmé mi asistencia, ¿ahora qué?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            ¡Eso es todo! Te enviaremos los boletos por medio del correo que registraste en cuanto confirmes tu asistencia, y te los reenviaremos el día de la boda también, ¡no más preocupaciones!
+                        </p>
+                    </div>
+                </li>
 
-              <li>
-                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                  </p>
-                </div>
-              </li>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">¿El código de invitado es personal?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            No necesariamente; es probable que el código que te proporcionamos englobe a varios invitados. De ser el caso, deberán confirmar la asistencia de cada uno para generarle su boleto. Ojo, los boletos si son personales, y serán enviados al correo que se registró en el proceso de confirmación.
+                        </p>
+                    </div>
+                </li>
 
             </ul>
 
@@ -245,6 +237,69 @@
       </div>
 
     </section><!-- End  F.A.Q Section -->
+
+    <!-- ======= Hotels Section ======= -->
+    <section id="hotels" class="section-with-bg">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Hoteles Recomendados</h2>
+            <p>Los siguientes hoteles son una buena opción de hospedaje, si lo necesitas. (Páguennos por la promición)</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="hotel">
+                <div class="hotel-img">
+                  <img src="{{ url('img/welcome/hotel3.jpg') }}" alt="Hotel 3" class="img-fluid">
+                </div>
+                <h3><a href="https://goo.gl/maps/UzstbzVzK9kLZmsr9" target="_blank">Hotel María Isabel</a></h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>4.6 km del evento (aprox. 6 minutos)</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel">
+                  <div class="hotel-img">
+                    <img src="{{ url('img/welcome/hotel2.jpg') }}" alt="Hotel 2" class="img-fluid">
+                  </div>
+                  <h3><a href="https://goo.gl/maps/L2Qt4G1vYvoSxyD1A" target="_blank">Hotel Misión Colima</a></h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>3.3 km del evento (aprox. 4 minutos)</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel">
+                  <div class="hotel-img">
+                    <img src="{{ url('img/welcome/hotel1.jpg') }}" alt="Hotel 1" class="img-fluid">
+                  </div>
+                  <h3><a href="https://goo.gl/maps/yDTXZG7DFoXsnQ9v5" target="_blank">Hotel Consierge Plaza la Villa</a></h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>5.0 km del evento (aprox. 8 minutos)</p>
+                </div>
+            </div>
+  
+          </div>
+        </div>
+  
+      </section><!-- End Hotels Section -->
 
     <!-- ======= Buy Ticket Section ======= -->
     <section id="buy-tickets" class="section-with-bg">
@@ -361,4 +416,51 @@
     </section><!-- End Buy Ticket Section -->
 
   </main><!-- End #main -->
+@endsection
+
+@section('javascript')
+
+<script>
+    $(document).ready(function(){
+        
+        $('#btn_confirmar_asistencia').click(function(){
+            Swal.fire({
+                title: 'Ingresa tu código de invitado',
+                input: 'text',
+                inputAttributes: {
+                    autocapitalize: 'off'
+                },
+                showCancelButton: true,
+                confirmButtonText: 'Validar',
+                cancelButtonText: 'Cancelar',
+                showLoaderOnConfirm: true,
+                footer: '<small>¿Tienes dudas? Consulta el apartado "Dudas Frecuentes" en el menú</small>',
+                preConfirm: (login) => {
+                    return fetch(`//api.github.com/users/${login}`)
+                    .then(response => {
+                        if (!response.ok) {
+                        throw new Error(response.statusText)
+                        }
+                        return response.json()
+                    })
+                    .catch(error => {
+                        Swal.showValidationMessage(
+                        `Request failed: ${error}`
+                        )
+                    })
+                },
+                allowOutsideClick: () => !Swal.isLoading()
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                    title: `${result.value.login}'s avatar`,
+                    imageUrl: result.value.avatar_url
+                    })
+                }
+            });
+        });
+
+    });
+</script>
+    
 @endsection
