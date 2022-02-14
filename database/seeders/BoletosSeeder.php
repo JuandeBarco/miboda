@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Boleto;
 use Illuminate\Database\Seeder;
 
-class LugarSeeder extends Seeder
+class BoletosSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,5 +15,6 @@ class LugarSeeder extends Seeder
     public function run()
     {
         //
+        Boleto::factory(120)->create();
     }
 }

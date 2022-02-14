@@ -19,7 +19,7 @@ class EventoSeeder extends Seeder
         $evento->nombre = 'Boda de Isis y Juande';
         $evento->fecha = '2022-10-22';
         $evento->hora_inicial = '21:00:00';
-        $evento->hora_final = '01:00:00';
+        $evento->hora_final = '02:00:00';
         $evento->estado = 'Colima';
         $evento->ciudad = 'Colima';
         $evento->user_id = 1;

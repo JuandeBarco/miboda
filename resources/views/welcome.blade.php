@@ -7,9 +7,22 @@
       <h1 class="mb-4 pb-0">Save the date<br><span>22 ♥ 10 ♥ 2022</span></h1>
       <p class="mb-4 pb-0" id="demo"></p>
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> -->
-      <button class="btn about-btn scrollto" id="btn_confirmar_asistencia">Confirma tu asistencia</button>
+      @if ($boleto)
+        <button class="btn about-btn scrollto" id="">Confirma tu asistencia</button>
+      @else
+        <button class="btn about-btn scrollto" id="btn_codigo_invitado">Ingresa tu código de invitado</button>
+      @endif
     </div>
   </section><!-- End Hero Section -->
+
+{{--   @if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+    </div>
+      
+  @endif --}}
+
+@if ($boleto)
 
   <main id="main">
 
@@ -416,6 +429,7 @@
     </section><!-- End Buy Ticket Section -->
 
   </main><!-- End #main -->
+@endif
 @endsection
 
 @section('javascript')
@@ -423,7 +437,7 @@
 <script>
     $(document).ready(function(){
         
-        $('#btn_confirmar_asistencia').click(function(){
+        $('#btn_codigo_invitado').click(function(){
             Swal.fire({
                 title: 'Ingresa tu código de invitado',
                 input: 'text',

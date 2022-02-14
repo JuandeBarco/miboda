@@ -42,13 +42,15 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Acerca de</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Los Novios</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Itinerario</a></li>
-          <li><a class="nav-link scrollto" href="#venue">Locaciones</a></li>
-          <li><a class="nav-link scrollto" href="#supporters">Regalos</a></li>
-          <li><a class="nav-link scrollto" href="#faq">Dudas Frecuentes</a></li>
-          <li><a class="nav-link scrollto" href="#hotels">Hospedaje</a></li>
+          @if ($boleto)
+            <li><a class="nav-link scrollto" href="#about">Acerca de</a></li>
+            <li><a class="nav-link scrollto" href="#speakers">Los Novios</a></li>
+            <li><a class="nav-link scrollto" href="#schedule">Itinerario</a></li>
+            <li><a class="nav-link scrollto" href="#venue">Locaciones</a></li>
+            <li><a class="nav-link scrollto" href="#supporters">Regalos</a></li>
+            <li><a class="nav-link scrollto" href="#faq">Dudas Frecuentes</a></li>
+            <li><a class="nav-link scrollto" href="#hotels">Hospedaje</a></li>
+          @endif
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>

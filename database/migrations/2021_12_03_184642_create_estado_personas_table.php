@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLugarsTable extends Migration
+class CreateEstadoPersonasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,9 @@ class CreateLugarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('lugars', function (Blueprint $table) {
+        Schema::create('estado_personas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->string('domicilio');
-            $table->unsignedBigInteger('tipo_lugar_id');
-            $table->foreign('tipo_lugar_id')->references('id')->on('tipo_lugars');
-            $table->unsignedBigInteger('evento_id');
-            $table->foreign('evento_id')->references('id')->on('eventos');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -33,6 +28,6 @@ class CreateLugarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lugars');
+        Schema::dropIfExists('estado_personas');
     }
 }

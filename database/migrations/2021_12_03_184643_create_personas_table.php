@@ -21,13 +21,14 @@ class CreatePersonasTable extends Migration
             $table->string('alias')->nullable();
             $table->string('celular')->nullable();
             $table->string('email')->nullable();
-            $table->unsignedTinyInteger('tiene_rol')->default(0);
             $table->unsignedBigInteger('sexo_id');
             $table->foreign('sexo_id')->references('id')->on('sexos');
-            $table->unsignedBigInteger('categoria_id')->default(2);
-            $table->foreign('categoria_id')->references('id')->on('categoria_personas');
             $table->unsignedBigInteger('evento_id');
             $table->foreign('evento_id')->references('id')->on('eventos');
+            $table->unsignedBigInteger('grupo_id')->nullable();
+            $table->foreign('grupo_id')->references('id')->on('grupos');
+            $table->unsignedBigInteger('estado_id')->default(1);
+            $table->foreign('estado_id')->references('id')->on('estado_personas');
             $table->timestamps();
             $table->softDeletes();
         });
