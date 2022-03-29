@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
@@ -16,11 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{codigo?}', [WelcomeController::class, 'index'])->name('welcome');
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
+Route::get('/invitado/{codigo?}', [WelcomeController::class, 'index'])->name('welcome.invitado');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/clear-cache', function() {
     Artisan::call('config:clear');
