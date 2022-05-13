@@ -26,24 +26,12 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Acerca del bodorrio</h2>
-            <p>Seamos honestos, las fiestas no se le dan ni a la novia, ni al novio; ser millenials tampoco ayuda, una super-mega boda no va con nuestro estilo. Si a eso le sumamos una impertinente pandemia, suena como que no es la mejor idea hacer una fiesta... Afortunadamente (para ambos), se encontró un perfecto balance: una boda sencilla y pequeña, pero muy especial.</p>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
     <!-- ======= Speakers Section ======= -->
     <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>¡Vivan los novios!</h2>
-          <p>(Si los reconce, por favor, denuncielos)</p>
+          <p>Nos gusta pensar que desde el principio de los tiempos nuestras particulas viajaron por el tiempo y el espacio hasta este momento, que somos el remanente de las estrellas que colapsaron para dar los cimientos de estos dos seres que, desde siempre, buscaban su lugar en el universo... hasta que se encontraron, nuevamente</p>
         </div>
 
         <div class="row justify-content-center">
@@ -66,46 +54,6 @@
       </div>
 
     </section><!-- End Speakers Section -->
-
-    <!-- ======= Schedule Section ======= -->
-    <section id="schedule" class="section-with-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Itinerario</h2>
-          <p>Pa' que no se pierdan de nada</p>
-        </div>
-
-        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">22 / 10 / 2022</a>
-          </li>
-        </ul>
-
-        <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-          necessitatibus voluptatem quis labore perspiciatis quia.</h3>
-
-        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>07:00 PM</time></div>
-              <div class="col-md-10">
-                {{-- <h4>Keynote <span>Brenden Legros</span></h4> --}}
-                <h4>Celebración</h4>
-                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 1 -->
-
-        </div>
-
-      </div>
-
-    </section><!-- End Schedule Section -->
 
     <!-- ======= Venue Section ======= -->
     <section id="venue">
@@ -150,6 +98,119 @@
 
     </section><!-- End Venue Section -->
 
+        <!-- ======= Schedule Section ======= -->
+        <section id="schedule" class="section-with-bg">
+          <div class="container" data-aos="fade-up">
+            <div class="section-header">
+              <h2>Itinerario</h2>
+              <p>Pa' que no se pierdan de nada</p>
+            </div>
+    {{-- 
+            <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">22 / 10 / 2022</a>
+              </li>
+            </ul>
+    
+            <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+              necessitatibus voluptatem quis labore perspiciatis quia.</h3> --}}
+    
+            <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+    
+              <!-- Schdule Day 1 -->
+              <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+    
+                <div class="row schedule-item">
+                  <div class="col-md-2"><time>07:00 PM</time></div>
+                  <div class="col-md-10">
+                    <h4>Celebración <span>(Templo de María Auxiliadora)</span></h4>
+                    <p>Será todo un honor para nosotros que nos acompañes en el momento en que comencemos nuestra familia</p>
+                  </div>
+                </div>
+                <div class="row schedule-item">
+                  <div class="col-md-2"><time>08:30 PM</time></div>
+                  <div class="col-md-10">
+                    <h4>Recepción <span>(Salón de eventos El Velero)</span></h4>
+                    <p>La recepción al banquete comenzará a las 08:30</p>
+                  </div>
+                </div>
+                <div class="row schedule-item">
+                  <div class="col-md-2"><time>09:00 PM</time></div>
+                  <div class="col-md-10">
+                    <h4>Pachangón <span></span></h4>
+                    <p>Let the party begins!</p>
+                  </div>
+                </div>
+                <div class="row schedule-item">
+                  <div class="col-md-2"><time>02:00 AM</time></div>
+                  <div class="col-md-10">
+                    <h4>Fin de la fiesta <span></span></h4>
+                    <p>¡Estaremos eternamente agradecidos por habernos acompañado en nuestro día!</p>
+                  </div>
+                </div>
+    
+              </div>
+              <!-- End Schdule Day 1 -->
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- End Schedule Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-center mb-3">
+              <h2>Código de vestimenta</h2>
+              <img src="{{ url('img/welcome/dresscode_clear.png') }}" class="img-fluid" width="100vh">
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="text-dark">Caballero</h3>
+                <ul class="list-group list-group-flush bg-transparent">
+                  <li class="list-group-item bg-transparent">Esmoquin o saco oscuro</li>
+                  <li class="list-group-item bg-transparent">Moño o corbata de color oscuro</li>
+                  <li class="list-group-item bg-transparent">Camisa color claro</li>
+                  <li class="list-group-item bg-transparent">Faja o chaleco color oscuro</li>
+                  <li class="list-group-item bg-transparent">Pantalon oscuro</li>
+                  <li class="list-group-item bg-transparent">Zapato negro</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="text-dark">Dama</h3>
+                <ul class="list-group list-group-flush bg-transparent">
+                  <li class="list-group-item bg-transparent">Vestido de coctel color oscuro (evitar el color blanco y rojo)</li>
+                  <li class="list-group-item bg-transparent">Accesorios acorde a la vestimenta</li>
+                  <li class="list-group-item bg-transparent">Calzado conforme a la vestimenta</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-center mb-3">
+              <h2>Protocolo de sanidad</h2>
+              <img src="{{ url('img/welcome/medidas_sanidad_clear.png') }}" class="img-fluid" width="80vh">
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group list-group-flush bg-transparent">
+                  <li class="list-group-item bg-transparent">1. Portar el cubrebocas en todo momento posible</li>
+                  <li class="list-group-item bg-transparent">2. Atender las indicaciones del o la hostest en la recepción</li>
+                  <li class="list-group-item bg-transparent">3. Continuar con las medidas que llevamos desde hace tiempo</li>
+                </ul>
+              </div>
+            </div>
+            <p>Entendemos que la pandemia ha traido consigo estragos inimaginables; si por algún mótivo no te sientes cómoda o cómodo al asistir al banquete o a la celebración, o presentas sintomas de COVID, agradeceriamos que nos avisaras con la mayor anticipación posible.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
         <!-- ======= Supporters Section ======= -->
         <section id="supporters" class="section-with-bg">
 
@@ -181,6 +242,69 @@
           </div>
     
         </section><!-- End Sponsors Section -->
+
+    <!-- ======= Hotels Section ======= -->
+    <section id="hotels" class="section-with-bg">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Hoteles Recomendados</h2>
+            <p>Los siguientes hoteles son una buena opción de hospedaje, si lo necesitas. (Páguennos por la promición)</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="hotel">
+                <div class="hotel-img">
+                  <img src="{{ url('img/welcome/hotel3.jpg') }}" alt="Hotel 3" class="img-fluid">
+                </div>
+                <h3><a href="https://goo.gl/maps/UzstbzVzK9kLZmsr9" target="_blank">Hotel María Isabel</a></h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p>4.6 km del evento (aprox. 6 minutos)</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel">
+                  <div class="hotel-img">
+                    <img src="{{ url('img/welcome/hotel2.jpg') }}" alt="Hotel 2" class="img-fluid">
+                  </div>
+                  <h3><a href="https://goo.gl/maps/L2Qt4G1vYvoSxyD1A" target="_blank">Hotel Misión Colima</a></h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>3.3 km del evento (aprox. 4 minutos)</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="hotel">
+                  <div class="hotel-img">
+                    <img src="{{ url('img/welcome/hotel1.jpg') }}" alt="Hotel 1" class="img-fluid">
+                  </div>
+                  <h3><a href="https://goo.gl/maps/yDTXZG7DFoXsnQ9v5" target="_blank">Hotel Consierge Plaza la Villa</a></h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>5.0 km del evento (aprox. 8 minutos)</p>
+                </div>
+            </div>
+  
+          </div>
+        </div>
+  
+      </section><!-- End Hotels Section -->
 
     <!-- =======  F.A.Q Section ======= -->
     <section id="faq">
@@ -250,69 +374,6 @@
       </div>
 
     </section><!-- End  F.A.Q Section -->
-
-    <!-- ======= Hotels Section ======= -->
-    <section id="hotels" class="section-with-bg">
-
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Hoteles Recomendados</h2>
-            <p>Los siguientes hoteles son una buena opción de hospedaje, si lo necesitas. (Páguennos por la promición)</p>
-          </div>
-  
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-  
-            <div class="col-lg-4 col-md-6">
-              <div class="hotel">
-                <div class="hotel-img">
-                  <img src="{{ url('img/welcome/hotel3.jpg') }}" alt="Hotel 3" class="img-fluid">
-                </div>
-                <h3><a href="https://goo.gl/maps/UzstbzVzK9kLZmsr9" target="_blank">Hotel María Isabel</a></h3>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <p>4.6 km del evento (aprox. 6 minutos)</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="hotel">
-                  <div class="hotel-img">
-                    <img src="{{ url('img/welcome/hotel2.jpg') }}" alt="Hotel 2" class="img-fluid">
-                  </div>
-                  <h3><a href="https://goo.gl/maps/L2Qt4G1vYvoSxyD1A" target="_blank">Hotel Misión Colima</a></h3>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>3.3 km del evento (aprox. 4 minutos)</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="hotel">
-                  <div class="hotel-img">
-                    <img src="{{ url('img/welcome/hotel1.jpg') }}" alt="Hotel 1" class="img-fluid">
-                  </div>
-                  <h3><a href="https://goo.gl/maps/yDTXZG7DFoXsnQ9v5" target="_blank">Hotel Consierge Plaza la Villa</a></h3>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>5.0 km del evento (aprox. 8 minutos)</p>
-                </div>
-            </div>
-  
-          </div>
-        </div>
-  
-      </section><!-- End Hotels Section -->
 
     <!-- ======= Buy Ticket Section ======= -->
     <section id="buy-tickets" class="section-with-bg">
