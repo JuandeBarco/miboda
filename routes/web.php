@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InvitadoController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,12 @@ Route::get('/invitado/{codigo?}', [WelcomeController::class, 'index'])->name('we
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+// Rutas Invitados
+Route::get('/invitados', [InvitadoController::class, 'index'])->name('invitados');
+Route::post('/invitados/store', [InvitadoController::class, 'store'])->name('invitados.store');
+Route::put('/invitados/edit', [InvitadoController::class, 'edit'])->name('invitados.edit');
+Route::delete('/invitados/destroy', [InvitadoController::class, 'destroy'])->name('invitados.destroy');
 
 Route::get('/clear-cache', function() {
     Artisan::call('config:clear');

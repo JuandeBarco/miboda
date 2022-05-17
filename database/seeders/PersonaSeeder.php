@@ -21,6 +21,7 @@ class PersonaSeeder extends Seeder
         $persona->segundo_apellido = 'Corona';
         $persona->sexo_id = 1;
         $persona->evento_id = 1;
+        $persona->grupo_id = 1;
         $persona->save();
     }
 }

@@ -16,6 +16,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link href="{{ asset('vendor/fontawesome/css/all.min.css') }}" rel="stylesheet">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -31,12 +34,15 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Registrar Invitado</a>
-                        </li>
-                    </ul>
+                    @guest
+                    @else
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('invitados') }}">Registrar Invitado</a>
+                            </li>
+                        </ul>
+                    @endguest
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -81,5 +87,54 @@
             @yield('content')
         </main>
     </div>
+
+    <!-- jQuery -->
+    <script src="{{ url('js/jquery-3.6.0.min.js') }}"></script>
+
+      <!-- SweetAlert2 -->
+    <script src="{{ url('vendor/sweetalert/dist/sweetalert2.all.min.js') }}"></script>
+
+    @yield('scripts')
+
+     <!-- Scripts para alertas -->
+     @if (session('success'))
+     <script>
+         $(document).ready(function() {
+             Swal.fire({
+                 icon: 'success',
+                 title: '¡Atención!',
+                 text: '{{ session('success') }}',
+                 buttonsStyling: false,
+                 confirmButtonClass: 'btn btn-success'
+             });
+         });
+     </script>
+    @endif
+    @if (session('error'))
+        <script>
+            $(document).ready(function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: '¡Atención!',
+                    text: '{{ session('error') }}',
+                    buttonsStyling: false,
+                    confirmButtonClass: 'btn btn-danger'
+                });
+            });
+        </script>
+    @endif
+    @if (session('info'))
+        <script>
+            $(document).ready(function() {
+                Swal.fire({
+                    icon: 'info',
+                    title: '¡Atención!',
+                    text: '{{ session('info') }}',
+                    buttonsStyling: false,
+                    confirmButtonClass: 'btn btn-info'
+                });
+            });
+        </script>
+    @endif
 </body>
 </html>
