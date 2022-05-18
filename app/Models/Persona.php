@@ -17,10 +17,12 @@ class Persona extends Model
             'grupos.nombre as grupo',
             'sexos.nombre as sexo',
             'estado_personas.nombre as estado',
+            'boletos.codigo as boleto'
         )
         ->join('grupos', 'grupos.id', '=', 'personas.grupo_id')
         ->join('sexos', 'sexos.id', '=', 'personas.sexo_id')
         ->join('estado_personas', 'estado_personas.id', '=', 'personas.estado_id')
+        ->leftJoin('boletos', 'boletos.id', '=', 'personas.boleto_id')
         ->get();
     }
 }

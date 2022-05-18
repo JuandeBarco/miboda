@@ -22,6 +22,8 @@ class PersonaSeeder extends Seeder
         $persona->sexo_id = 1;
         $persona->evento_id = 1;
         $persona->grupo_id = 1;
+        $persona->estado_id = 1;
+        $persona->boleto_id = 1;
         $persona->save();
     }
 }

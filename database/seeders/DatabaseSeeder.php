@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
             EstadoPersonaSeeder::class,
             EstadoBoletoSeeder::class,
             GrupoSeeder::class,
-            PersonaSeeder::class,
-            BoletosSeeder::class
+            BoletosSeeder::class,
+            //PersonaSeeder::class
         ]);
     }
 }

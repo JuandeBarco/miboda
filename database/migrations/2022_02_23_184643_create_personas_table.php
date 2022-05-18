@@ -29,6 +29,8 @@ class CreatePersonasTable extends Migration
             $table->foreign('grupo_id')->references('id')->on('grupos');
             $table->unsignedBigInteger('estado_id')->default(1);
             $table->foreign('estado_id')->references('id')->on('estado_personas');
+            $table->unsignedBigInteger('boleto_id')->nullable();
+            $table->foreign('boleto_id')->references('id')->on('boletos');
             $table->timestamps();
             $table->softDeletes();
         });

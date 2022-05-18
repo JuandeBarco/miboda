@@ -16,6 +16,10 @@ class EstadoBoletoSeeder extends Seeder
     {
         //
         $estado_boleto = new EstadoBoleto();
+        $estado_boleto->nombre = 'Disponible';
+        $estado_boleto->save();
+
+        $estado_boleto = new EstadoBoleto();
         $estado_boleto->nombre = 'Vigente';
         $estado_boleto->save();
 

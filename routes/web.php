@@ -26,10 +26,11 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Rutas Invitados
-Route::get('/invitados', [InvitadoController::class, 'index'])->name('invitados');
-Route::post('/invitados/store', [InvitadoController::class, 'store'])->name('invitados.store');
-Route::put('/invitados/edit', [InvitadoController::class, 'edit'])->name('invitados.edit');
-Route::delete('/invitados/destroy', [InvitadoController::class, 'destroy'])->name('invitados.destroy');
+Route::get('/personas', [InvitadoController::class, 'index'])->name('invitados');
+Route::post('/personas/store', [InvitadoController::class, 'store'])->name('invitados.store');
+Route::put('/personas/edit', [InvitadoController::class, 'edit'])->name('invitados.edit');
+Route::delete('/personas/destroy', [InvitadoController::class, 'destroy'])->name('invitados.destroy');
+Route::get('/personas/info/{id}', [InvitadoController::class, 'get_info'])->name('invitados.get_info');
 
 Route::get('/clear-cache', function() {
     Artisan::call('config:clear');
