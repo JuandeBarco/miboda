@@ -8,12 +8,36 @@
       <p class="mb-4 pb-0" id="demo"></p>
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> -->
       @if ($boleto)
-        <button class="btn about-btn scrollto" id="">Confirma tu asistencia</button>
+        {{-- <button class="btn about-btn scrollto" id="">Confirma tu asistencia</button> --}}
+        <h2 class="text-light">¡Bienvenido al mejor día de nuestras vidas!</h2>
       @else
-        <button class="btn about-btn scrollto" id="btn_codigo_invitado">Ingresa tu código de invitado</button>
+        <button class="btn about-btn scrollto" data-bs-toggle="modal" data-bs-target="#modal_codigo">Ingresa tu código de invitado</button>
       @endif
     </div>
   </section><!-- End Hero Section -->
+<!-- Modal -->
+<div class="modal fade" id="modal_codigo" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Código de Invitado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <form action="{{ route('welcome.validar_codigo') }}" method="POST" id="form_codigo" enctype="multipart/form-data">
+            @csrf
+            <div class="form-group">
+              <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ingresa tu código de invitado">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" id="btn_form_codigo_submit">Corroborar código</button>
+          </form>
+          <div class="alert alert-danger mt-3" role="alert" id="alert_error" hidden>El código ingresado no es valido, corrobora y escribelo de nuevo. Si es necesario, contacta con alguno de los novios.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{--   @if (session('status'))
     <div class="alert alert-success" role="alert">
@@ -69,14 +93,14 @@
         <div class="col-lg-6 venue-info">
           <div class="row justify-content-center">
             <div class="col-11 col-lg-8 position-relative">
-              <h3>Santuario de María Auxiliadora</h3>
+              <h3>Parroquia Preciosa Sangre de Cristo</h3>
               <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 venue-map">
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1370.5933156429908!2d-103.72679983410482!3d19.239431502342914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255aaadeae1e09%3A0x88bbdb2f00751a0!2sIglesia%20de%20Mar%C3%ADa%20Auxiliadora!5e0!3m2!1ses!2smx!4v1642747892658!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4479.651920379523!2d-103.7248153179251!3d19.242176771453526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7f88ac435fb8d38!2sParroquia%20Preciosa%20Sangre%20de%20Cristo!5e0!3m2!1ses!2smx!4v1652932349566!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
       </div>
 
@@ -380,7 +404,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Buy Tickets</h2>
+          <h2>Confirma tu asistencia</h2>
           <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
         </div>
 
@@ -497,45 +521,63 @@
 
 <script>
     $(document).ready(function(){
-        
-        $('#btn_codigo_invitado').click(function(){
-            Swal.fire({
-                title: 'Ingresa tu código de invitado',
-                input: 'text',
-                inputAttributes: {
-                    autocapitalize: 'off'
-                },
-                showCancelButton: true,
-                confirmButtonText: 'Validar',
-                cancelButtonText: 'Cancelar',
-                showLoaderOnConfirm: true,
-                footer: '<small>¿Tienes dudas? Consulta el apartado "Dudas Frecuentes" en el menú</small>',
-                preConfirm: (login) => {
-                    return fetch(`//api.github.com/users/${login}`)
-                    .then(response => {
-                        if (!response.ok) {
-                        throw new Error(response.statusText)
-                        }
-                        return response.json()
-                    })
-                    .catch(error => {
-                        Swal.showValidationMessage(
-                        `Request failed: ${error}`
-                        )
-                    })
-                },
-                allowOutsideClick: () => !Swal.isLoading()
-                }).then((result) => {
-                if (result.isConfirmed) {
+
+        $('#form_codigo').on('submit', function(e){
+            e.preventDefault();
+            $('#btn-codigo').attr('disabled', true);
+            $('#btn_form_codigo_submit').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Validando...');
+            var codigo = $('#codigo').val();
+            var url = "{{ route('welcome.validar_codigo') }}";
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: {codigo: codigo},
+                success: function(data){
+                  console.log(data);
+                  
+                  $('#btn-codigo').attr('disabled', false);
+                  $('#btn_form_codigo_submit').html('Validar código');
+
+                  if (data.status == 'error') {
+                    $('#alert_error').attr('hidden', false);
+                  } else {
+                    $('#alert_error').attr('hidden', true);
+                    $('#modal_codigo').modal('hide');
                     Swal.fire({
-                    title: `${result.value.login}'s avatar`,
-                    imageUrl: result.value.avatar_url
+                      title: 'Código válido',
+                      text: 'El código ingresado es válido, presiona el botón "Aceptar" para continuar a la página',
+                      type: 'success',
+                      confirmButtonText: 'Aceptar',
+                      allowOutsideClick: false
+                    }).then((result) => {
+                      if (result.value) {
+                        let url = "{{ route('welcome.invitado', ':codigo') }}";
+                        url = url.replace(':codigo', codigo);
+                        window.location.href = url;
+                      }
                     })
+                  }
                 }
             });
         });
 
     });
 </script>
+
+@if (!$boleto)
+  <script>
+    $(document).ready(function(){
+      $('#abtn_confirmar').click(function(){
+        $('#modal_codigo').modal('show');
+      });
+    });
+  </script>
+@endif
     
 @endsection

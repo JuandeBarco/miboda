@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 Route::get('/invitado/{codigo?}', [WelcomeController::class, 'index'])->name('welcome.invitado');
+Route::post('/invitado/validar_codigo', [WelcomeController::class, 'validar_codigo'])->name('welcome.validar_codigo');
 
 Auth::routes();
 

@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
   <!-- Favicons -->
   <link href="{{ url('img/welcome/favicon.png') }}" rel="icon">
   <link href="{{ url('img/welcome/apple-touch-icon.png') }}" rel="apple-touch-icon">
@@ -71,7 +74,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="#buy-tickets">Boletos</a>
+      <a class="buy-tickets scrollto" href="#buy-tickets" id="abtn_confirmar">Confirmar Asistencia</a>
 
     </div>
   </header><!-- End Header -->
