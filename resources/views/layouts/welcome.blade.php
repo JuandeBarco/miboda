@@ -47,7 +47,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           @if ($boleto)
             <li><a class="nav-link scrollto" href="#speakers">Los Novios</a></li>
-            <li><a class="nav-link scrollto" href="#venue">Locaciones</a></li>
+            <li><a class="nav-link scrollto" href="#venue">Lugares</a></li>
             <li><a class="nav-link scrollto" href="#schedule">Itinerario</a></li>
             <li><a class="nav-link scrollto" href="#about">Protocolo</a></li>
             <li><a class="nav-link scrollto" href="#supporters">Regalos</a></li>

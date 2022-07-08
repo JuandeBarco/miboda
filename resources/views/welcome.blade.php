@@ -85,7 +85,7 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Locaciones</h2>
+          <h2>Lugares</h2>
           <p>¡Colima los espera con un (muy) calido abrazo!</p>
         </div>
 
@@ -193,25 +193,9 @@
             </div>
             <div class="card mb-3">
               <div class="card-body">
-                <h3 class="text-dark">Caballero</h3>
-                <ul class="list-group list-group-flush bg-transparent">
-                  <li class="list-group-item bg-transparent">Esmoquin o saco oscuro</li>
-                  <li class="list-group-item bg-transparent">Moño o corbata de color oscuro</li>
-                  <li class="list-group-item bg-transparent">Camisa color claro</li>
-                  <li class="list-group-item bg-transparent">Faja o chaleco color oscuro</li>
-                  <li class="list-group-item bg-transparent">Pantalon oscuro</li>
-                  <li class="list-group-item bg-transparent">Zapato negro</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h3 class="text-dark">Dama</h3>
-                <ul class="list-group list-group-flush bg-transparent">
-                  <li class="list-group-item bg-transparent">Vestido de coctel color oscuro (evitar el color blanco y rojo)</li>
-                  <li class="list-group-item bg-transparent">Accesorios acorde a la vestimenta</li>
-                  <li class="list-group-item bg-transparent">Calzado conforme a la vestimenta</li>
-                </ul>
+                <div class="text-center">
+                  <h1 class="text-dark">Formal</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -273,7 +257,7 @@
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Hoteles Recomendados</h2>
-            <p>Los siguientes hoteles son una buena opción de hospedaje, si lo necesitas. (Páguennos por la promición)</p>
+            <p>Los siguientes hoteles son una buena opción de hospedaje, si lo necesitas.</p>
           </div>
   
           <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -405,75 +389,23 @@
 
         <div class="section-header">
           <h2>Confirma tu asistencia</h2>
-          <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+          <p>Es muy importante para nosotros que puedas confirmar tu asistencia, aun si la respuesta es negativa. Queremos que esta boda sea muy especial, y contar con tu participación es muy importante para nosotros</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+        @foreach ($boletos_grupo as $item)
+          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
-                <h6 class="card-price text-center">$150</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                </ul>
-                <hr>
+                <h5 class="card-title text-muted text-uppercase text-center">Boleto personal</h5>
+                <p class="card-price text-center" style="font-size: 20px">{{ $item->nombre_completo }}<p>
                 <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Confirmar asistencia</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
-                <h6 class="card-price text-center">$250</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Pro Tier -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
-                <h6 class="card-price text-center">$350</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
+        @endforeach
         </div>
 
       </div>

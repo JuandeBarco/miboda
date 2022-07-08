@@ -13,7 +13,9 @@ class WelcomeController extends Controller
         if (!$boleto) {
             $boleto = null;
         }
-        return view('welcome', compact('boleto'));
+
+        $boletos_grupo = Boleto::get_boletos_grupo($boleto->grupo_id);
+        return view('welcome', compact(['boleto', 'boletos_grupo']));
     }
 
     public function validar_codigo(Request $request)
