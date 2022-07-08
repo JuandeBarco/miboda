@@ -10,11 +10,14 @@ class WelcomeController extends Controller
     public function index($codigo = null)
     {
         $boleto = Boleto::where('codigo', $codigo)->first();
+        $boletos_grupo = null;
+        
         if (!$boleto) {
             $boleto = null;
+        } else {
+            $boletos_grupo = Boleto::get_boletos_grupo($boleto->grupo_id);
         }
 
-        $boletos_grupo = Boleto::get_boletos_grupo($boleto->grupo_id);
         return view('welcome', compact(['boleto', 'boletos_grupo']));
     }
 
