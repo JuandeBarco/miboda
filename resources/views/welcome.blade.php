@@ -4,12 +4,13 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="mb-4 pb-0">Save the date<br><span>22 ♥ 10 ♥ 2022</span></h1>
+      <h1 class="mb-4 pb-0" style="font-family: 'Sacramento', cursive;">Save the date<br><span>22 ♥ 10 ♥ 2022</span></h1>
       <p class="mb-4 pb-0" id="demo"></p>
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> -->
       @if ($boleto)
         {{-- <button class="btn about-btn scrollto" id="">Confirma tu asistencia</button> --}}
         <h2 class="text-light">¡Bienvenido(a) al mejor día de nuestras vidas!</h2>
+        <p><small class="text-light">👇 Desliza hacía abajo 👇</small></p>
       @else
         <button class="btn about-btn scrollto" data-bs-toggle="modal" data-bs-target="#modal_codigo">Ingresa tu código de invitado</button>
       @endif
@@ -186,7 +187,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="text-center mb-3">
-              <h2>Código de vestimenta</h2>
+              <h2 style="font-family: 'Sacramento', cursive;">Código de vestimenta</h2>
               <img src="{{ url('img/welcome/dresscode_clear.png') }}" class="img-fluid" width="100vh">
             </div>
             <div class="card mb-3">
@@ -199,7 +200,7 @@
           </div>
           <div class="col-lg-6">
             <div class="text-center mb-3">
-              <h2>Protocolo de sanidad</h2>
+              <h2 style="font-family: 'Sacramento', cursive;">Protocolo de sanidad</h2>
               <img src="{{ url('img/welcome/medidas_sanidad_clear.png') }}" class="img-fluid" width="80vh">
             </div>
             <div class="card">

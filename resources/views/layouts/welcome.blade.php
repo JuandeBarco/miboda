@@ -13,8 +13,9 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <!-- Favicons -->
-  <link href="{{ url('img/welcome/favicon.png') }}" rel="icon">
-  <link href="{{ url('img/welcome/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <!-- Favicon -->
+  <link rel="icon" href="{{ url('favicon.ico') }}">
+  <link href="{{ url('favicon.ico') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -28,9 +29,20 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ url('css/welcome_style.css') }}" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <style>
+    .cursiva {
+      font-family: 'Sacramento', cursive;
+    }
+  </style>
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
