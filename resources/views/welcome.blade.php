@@ -9,7 +9,7 @@
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> -->
       @if ($boleto)
         {{-- <button class="btn about-btn scrollto" id="">Confirma tu asistencia</button> --}}
-        <h2 class="text-light">¡Bienvenido al mejor día de nuestras vidas!</h2>
+        <h2 class="text-light">¡Bienvenido(a) al mejor día de nuestras vidas!</h2>
       @else
         <button class="btn about-btn scrollto" data-bs-toggle="modal" data-bs-target="#modal_codigo">Ingresa tu código de invitado</button>
       @endif
@@ -55,7 +55,8 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>¡Vivan los novios!</h2>
-          <p>Nos gusta pensar que desde el principio de los tiempos nuestras particulas viajaron por el tiempo y el espacio hasta este momento, que somos el remanente de las estrellas que colapsaron para dar los cimientos de estos dos seres que, desde siempre, buscaban su lugar en el universo... hasta que se encontraron, nuevamente</p>
+          <p>Nos gusta pensar que desde el principio de los tiempos nuestras partículas viajaron por el tiempo y el espacio hasta este momento, que somos el remanente de las estrellas que colapsaron para dar los cimientos de estos dos seres que, desde siempre, buscaban su lugar en el universo... hasta que se encontraron, nuevamente.</p> 
+          <p class="mt-3">Hay momentos en la vida que son especiales por si solos, y compartirlos con las personas que quieres los convierte en momentos inolvidables. Por ello, es un honor para nosotros invitarte a la unión de estas dos almas en sagrado matrimonio el día 22 de Octubre a las 07:00pm, en la parroquia “Preciosa Sangre de Cristo”. Posteriormente, llevaremos a cabo una pequeña e íntima celebración en el salón de eventos “El Velero”, en compañía de aquellas personas que le agregan vida a nuestra existencia, como lo eres tú ❤ .</p>
         </div>
 
         <div class="row justify-content-center">
@@ -64,12 +65,9 @@
               <img src="{{ url('img/welcome/boda2.jpg') }}" alt="Speaker 1" class="img-fluid">
               <div class="details">
                 <h3><a href="speaker-details.html">Casándonos</a></h3>
-                <p>(Crestomatía)</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                <p>Nuestra primer boda en kermés (2019)</p>
+                <div class="social text-light">
+                  (Crestomatía)
                 </div>
               </div>
             </div>
@@ -94,7 +92,7 @@
           <div class="row justify-content-center">
             <div class="col-11 col-lg-8 position-relative">
               <h3>Parroquia Preciosa Sangre de Cristo</h3>
-              <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+              <p>Domiclio: Filomeno Medina 124. Colonia: Centro, Colima, Col.</p>
             </div>
           </div>
         </div>
@@ -109,7 +107,7 @@
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8 position-relative">
                 <h3>Salón de Eventos "El Velero"</h3>
-                <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                <p>Tercer Anillo Periférico 69, Colonia: Residencial Esmeralda, Colima, Col.</p>
               </div>
             </div>
           </div>
@@ -147,15 +145,15 @@
                 <div class="row schedule-item">
                   <div class="col-md-2"><time>07:00 PM</time></div>
                   <div class="col-md-10">
-                    <h4>Celebración <span>(Templo de María Auxiliadora)</span></h4>
+                    <h4>Boda <span>(Parroquía: Preciosa Sangre de Cristo)</span></h4>
                     <p>Será todo un honor para nosotros que nos acompañes en el momento en que comencemos nuestra familia</p>
                   </div>
                 </div>
                 <div class="row schedule-item">
                   <div class="col-md-2"><time>08:30 PM</time></div>
                   <div class="col-md-10">
-                    <h4>Recepción <span>(Salón de eventos El Velero)</span></h4>
-                    <p>La recepción al banquete comenzará a las 08:30</p>
+                    <h4>Celebración <span>(Salón de eventos El Velero)</span></h4>
+                    <p>La recepción al banquete comenzará a las 08:30pm</p>
                   </div>
                 </div>
                 <div class="row schedule-item">
@@ -208,7 +206,7 @@
               <div class="card-body">
                 <ul class="list-group list-group-flush bg-transparent">
                   <li class="list-group-item bg-transparent">1. Portar el cubrebocas en todo momento posible</li>
-                  <li class="list-group-item bg-transparent">2. Atender las indicaciones del o la hostest en la recepción</li>
+                  <li class="list-group-item bg-transparent">2. Atender las indicaciones de el o la hostest en la recepción</li>
                   <li class="list-group-item bg-transparent">3. Continuar con las medidas que llevamos desde hace tiempo</li>
                 </ul>
               </div>
@@ -225,7 +223,7 @@
           <div class="container" data-aos="fade-up">
             <div class="section-header">
               <h2>Mesa de regalos</h2>
-              <p>No necesariamente debe ser algo de aquí, pero si quieres ideas...</p>
+              <p>No es obligatorio llevar un regalo de alguna de nuestras mesas indicadas a continuación, estas son sugerencias en caso de que las necesites. Da click en cualquiera de los logos (Amazon y/o Liverpool) para ser redirigido.</p>
             </div>
     
             <div class="row clearfix justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -257,7 +255,7 @@
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Hoteles Recomendados</h2>
-            <p>Los siguientes hoteles son una buena opción de hospedaje, si lo necesitas.</p>
+            <p>Si lo necesitas, ¡los siguientes hoteles son una excelente opción de hospedaje!</p>
           </div>
   
           <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -274,7 +272,8 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <p>4.6 km del evento (aprox. 6 minutos)</p>
+                <p>2.3 km del templo (aprox. 3 minutos)</p>
+                <p>4.6 km del casino (aprox. 6 minutos)</p>
               </div>
             </div>
 
@@ -290,7 +289,8 @@
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                   </div>
-                  <p>3.3 km del evento (aprox. 4 minutos)</p>
+                  <p>4.4 km del templo (aprox. 6 minutos)</p>
+                  <p>3.3 km del casino (aprox. 4 minutos)</p>
                 </div>
             </div>
 
@@ -305,7 +305,8 @@
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                   </div>
-                  <p>5.0 km del evento (aprox. 8 minutos)</p>
+                  <p>3.5 km del templo (aprox. 6 minutos)</p>
+                  <p>5.0 km del casino (aprox. 8 minutos)</p>
                 </div>
             </div>
   
@@ -321,7 +322,7 @@
 
         <div class="section-header">
           <h2>Dudas Frecuentes</h2>
-          <p>Cualquier otra duda referente a la boda, ¡contactanos!</p>
+          <p>Da click en las flechitas que acompañan a cada pregunta del lado izquierdo para desglosar la información, en caso de tener cualquier otra duda, ¡contáctanos! con mucho gusto la resolveremos</p>
         </div>
 
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -330,37 +331,28 @@
             <ul class="faq-list">
 
                 <li>
-                    <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">¿Es necesario confirmar mi asistencia? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                    <div data-bs-toggle="collapse" href="#faq1" class="collapsed question">¿Es necesario confirmar mi asistencia? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                         <p>
-                            Si por cualquier motivo no puedes asistir a la fiesta, no te preocupes. La fiesta será para muy pocas personas, y te agradeceríamos muchisimo que nos confirmes tu asistencia (o inasistencia) lo antes posible a tráves del botón "Confirmar asistencia", que se encuentra en la parte superior de la página.
+                          Si, este primer paso es muy importante para nosotros. Si por cualquier motivo no puedes asistir a la celebración, ¡no te preocupes!, valoraremos mucho tu sinceridad y responsabilidad. La fiesta será para un grupo reducido (pero muy especial) de personas, por ello te solicitamos que nos confirmes tu asistencia (o inasistencia) a través del botón "Confirmar asistencia", que se encuentra en la parte superior de la página (o si navegas hasta el final de la misma), ahí podrás seleccionar la opción "¡Por su puesto!" para confirmar tu asistencia, o “No será posible” en caso de que no puedas acompañarnos. Tienes hasta el día <span class="fw-bold">31 de julio</span> para llevar a cabo este paso, sin embargo agradeceríamos muchísimo si lo haces en cuanto te sea posible. En caso de no haberlo hecho dentro del periodo límite, automáticamente se tomará como inasistencia y el boleto se perderá. De igual manera si ya pasó el periodo de registro, confirmaste asistencia, y al final no puedes ir, por favor manda un mensaje notificando a cualquiera de los novios
                         </p>
                     </div>
                   </li>
 
                 <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">¿Cuál es mi código de invitado?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Es un código de cinco digitos aleatorios que te compartimos en la invitación digital de la boda. Si tienes problemas identificandolo, puedes contactar a cualquiera de los novios, y con gusto te ayudaremos.
-                        </p>
-                    </div>
-                </li>
-
-                <li>
                     <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">¿Por qué necesito registrar mi correo para confirmar mi asistencia?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                     <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                         <p>
-                            Necesitamos tu correo para que el sistema (hecho por el novio) pueda enviarte tus boletos. Opcionalemente puedes compartirnos tu número de celular para notificarte cualquier cosa por medio de SMS. No te preocupes, no compartiremos ningún dato tuyo con nadie.
+                          Necesitamos tu correo para que el sistema pueda enviarte tus boletos.De igual manera solicitaremos tu número de celular para notificarte cualquier cosa por medio de SMS. No te preocupes, no compartiremos ningún dato personal tuyo.
                         </p>
                     </div>
                 </li>
 
                 <li>
-                    <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Ya confirmé mi asistencia, ¿ahora qué?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Ya confirmé mi asistencia, ¿qué sigue?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                     <div id="faq3" class="collapse" data-bs-parent=".faq-list">
                         <p>
-                            ¡Eso es todo! Te enviaremos los boletos por medio del correo que registraste en cuanto confirmes tu asistencia, y te los reenviaremos el día de la boda también, ¡no más preocupaciones!
+                            ¡Eso es todo! Te enviaremos el o los boletos poco antes del día de la boda por medio del correo que registraste, y te los reenviaremos a tu celular el día de la boda también, ¡no más preocupaciones!
                         </p>
                     </div>
                 </li>
@@ -369,7 +361,23 @@
                     <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">¿El código de invitado es personal?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                     <div id="faq4" class="collapse" data-bs-parent=".faq-list">
                         <p>
-                            No necesariamente; es probable que el código que te proporcionamos englobe a varios invitados. De ser el caso, deberán confirmar la asistencia de cada uno para generarle su boleto. Ojo, los boletos si son personales, y serán enviados al correo que se registró en el proceso de confirmación.
+                          No necesariamente; es probable que el código que te proporcionamos englobe a varios invitados, esto lo podrás ver en el apartado de “Confirmar asistencia / inasistencia. En caso de que englobe a más de una persona, deberás confirmar a cada una de ellas. 
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">¿Los boletos son personales?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                          Si, los boletos <span class="fw-bold">son personales e intransferibles</span>. Cada persona tendrá su boleto de acceso a la fiesta y serán enviados al correo que se registró en el proceso de confirmación, por ello te pedimos que si alguno de los nombres está incompleto o es incorrecto, te pongas en contacto con alguno de los novios para hacer la corrección. El casino donde se llevará a cabo la fiesta tiene un espacio reducido, por lo que te pedimos no solicitar boletos adicionales, pues esto puede generar muchas complicaciones para los novios. Agradecemos mucho tu comprensión.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">¿Necesito llevar mi boleto físico?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                          No, para ingresar a la fiesta podrás presentar tu boleto de manera digital desde tu celular, ¡así que no te preocupes! ☺ 
                         </p>
                     </div>
                 </li>
@@ -388,8 +396,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Confirma tu asistencia</h2>
-          <p>Es muy importante para nosotros que puedas confirmar tu asistencia, aun si la respuesta es negativa. Queremos que esta boda sea muy especial, y contar con tu participación es muy importante para nosotros</p>
+          <h2>Confirma tu asistencia / inasistencia</h2>
+          <p>A continuación podrás confirmar tu asistencia o inasistencia. En caso de que tu código de invitado englobe a más de una persona, por favor confirma a cada una de ellas, presiona el botón “registrar respuesta" que se encuentra debajo de él o los nombres. ¡Gracias, esperamos verte pronto!</p>
         </div>
 
         <div class="row justify-content-center">
@@ -399,9 +407,20 @@
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Boleto personal</h5>
                 <p class="card-price text-center" style="font-size: 20px">{{ $item->nombre_completo }}<p>
+              @if ($item->estado_id == 1)
                 <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Confirmar asistencia</button>
+                  <button type="button" class="btn boton_asistencia" id="btn_disparador_modal_asistencia" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-id="{{ $item->id }}">Registrar respuesta</button>
+                  <span id="badge_estatus" hidden></span>
                 </div>
+              @elseif ($item->estado_id == 2)
+                <div class="text-center">
+                  <span class="badge bg-success" id="badge_estatus">Asistencia confirmada</span>
+                </div>
+              @elseif ($item->estado_id == 4)
+                <div class="text-center">
+                  <span class="badge bg-secondary" id="badge_estatus">No asistirá</span>
+                </div>
+              @endif
               </div>
             </div>
           </div>
@@ -415,27 +434,43 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Buy Tickets</h4>
+              <h4 class="modal-title">Registro de asistencias</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                </div>
+              <form id="form_confirmacion" method="POST" action="{{ route('invitados.confirmar_asistencia') }}" enctype="multipart/form-data">
+              @method('PUT')
+              @csrf
+                <p>¡Hola! En este espacio podrás confirmar tu asistencia a la fiesta. Tu respuesta, sea cual sea, nos es de muchísima ayuda para que todo sea perfecto en ese día.</p>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                </div>
-                <div class="form-group mt-3">
-                  <select id="ticket-type" name="ticket-type" class="form-select">
-                    <option value="">-- Select Your Ticket Type --</option>
-                    <option value="standard-access">Standard Access</option>
-                    <option value="pro-access">Pro Access</option>
-                    <option value="premium-access">Premium Access</option>
+                  <label for="ticket-type">Asistencia</label>
+                  <select name="respuesta" id="respuesta" class="form-select">
+                    <option value="" selected disabled>-- ¿Nos acompañarás en este día especial? --</option>
+                    <option value="1">¡Por supuesto!</option>
+                    <option value="2">No será posible</option>
                   </select>
                 </div>
+                <div id="div_confirmacion" hidden>
+                  <p class="mt-5">¡GENIAL! Gracias por decidir acompañarnos, a continuación requerimos que nos compartas un correo electronico y tu numero de celular al que, un mes antes del tan esperado día, se enviarán los boletos</p>
+                  <div class="form-group">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" class="form-control" name="correo" id="correo" placeholder="Ej. mi_correo@gmail.com">
+                    @if (count($boletos_grupo) > 1)
+                      <small class="form-text text-muted"> Te recomendamos usar el mismo correo para todos los invitados</small>
+                    @endif
+                  </div>
+                  <div class="form-group mt-3">
+                    <label for="phone">Numero de celular</label>
+                    <input type="number" class="form-control" name="celular" id="celular" placeholder="Ej. 3121234567">
+                    <small class="form-text text-muted">No usaremos esta información para cambiarte a Movistar, lo prometemos</small>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="hidden" class="form-control" name="codigo_invitado" id="codigo_invitado" value="{{ $boleto->codigo }}" hidden>
+                    <input type="hidden" class="form-control" name="persona" id="persona" hidden>
+                  </div>
+                </div>
                 <div class="text-center mt-3">
-                  <button type="submit" class="btn">Buy Now</button>
+                  <button type="submit" class="btn" id="form_registrar_btn">Registrar respuestas</button>
                 </div>
               </form>
             </div>
@@ -453,6 +488,72 @@
 
 <script>
     $(document).ready(function(){
+
+        $('#form_confirmacion').on('submit', function(e){
+            e.preventDefault();
+            $('#form_registrar_btn').attr('disabled', true);
+            $('#form_registrar_btn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Registrando...');
+            var form = $(this);
+            var formData = new FormData(form[0]);
+            $.ajax({
+                url: form.attr('action'),
+                type: form.attr('method'),
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(data){
+                    console.log(data);
+                    $('#form_registrar_btn').html('<i class="fa fa-check"></i> Registrado');
+                    $('#form_registrar_btn').attr('disabled', false);
+                    if(data.success){
+                        $('#buy-ticket-modal').modal('hide');
+                        $('#btn_disparador_modal_asistencia').attr('disabled', true);
+                        $('#btn_disparador_modal_asistencia').attr('hidden', true);
+
+                        /* if (data.estado == 2) {
+                            $('#badge_estatus').attr('hidden', false);
+                            $('#badge_estatus').attr('class', 'badge bg-success');
+                            $('#badge_estatus').html('Asistencia confirmada');
+                        } else {
+                            $('#badge_estatus').attr('hidden', false);
+                            $('#badge_estatus').attr('class', 'badge bg-secondary');
+                            $('#badge_estatus').html('No asistirá');
+                        } */
+                        Swal.fire({
+                            icon: 'success',
+                            title: '¡Registro exitoso!',
+                            text: '¡Muchas gracias por tu respuesta! La página se recargará en unos segundos.',
+                            type: 'success',
+                            timer: 3000,
+                            showConfirmButton: false,
+                            timerProgressBar: true,
+                        }).then(function() {
+                            window.location.reload();
+                        });
+                    }
+                }
+            });
+        });
+
+        $('.boton_asistencia').click(function(){
+            var id = $(this).data('id');
+            $('#persona').val(id);
+        });
+
+        $('#respuesta').change(function(){
+          console.log($(this).val());
+            if($(this).val() == 1){
+                $('#div_confirmacion').attr('hidden', false);
+                // make required fields required
+                $('#correo').prop('required', true);
+                $('#celular').prop('required', true);
+            }else{
+                $('#div_confirmacion').attr('hidden', true);
+                // make required fields not required
+                $('#correo').prop('required', false);
+                $('#celular').prop('required', false);
+            }
+        });
 
         $('#form_codigo').on('submit', function(e){
             e.preventDefault();

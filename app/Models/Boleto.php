@@ -28,6 +28,7 @@ class Boleto extends Model
         $boleto = self::select(
             'boletos.id',
             DB::raw('CONCAT(personas.nombre, " ", personas.primer_apellido, " ", personas.segundo_apellido) AS nombre_completo'),
+            'personas.estado_id',
         )
         ->join('personas', 'personas.boleto_id', '=', 'boletos.id')
         ->where('boletos.grupo_id', $grupo_id)

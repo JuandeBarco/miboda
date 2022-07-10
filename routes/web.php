@@ -33,6 +33,8 @@ Route::put('/personas/edit', [InvitadoController::class, 'edit'])->name('invitad
 Route::delete('/personas/destroy', [InvitadoController::class, 'destroy'])->name('invitados.destroy');
 Route::get('/personas/info/{id}', [InvitadoController::class, 'get_info'])->name('invitados.get_info');
 
+Route::put('/personas/confirmar_asistencia', [WelcomeController::class, 'confirmar_asistencia'])->name('invitados.confirmar_asistencia');
+
 Route::get('/clear-cache', function() {
     Artisan::call('config:clear');
     Artisan::call('cache:clear');
