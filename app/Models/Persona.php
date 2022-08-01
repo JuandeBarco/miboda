@@ -10,9 +10,9 @@ class Persona extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public static function get_invitados()
+    public static function get_invitados($estatus = null)
     {
-        return self::select(
+        $invitados = self::select(
             'personas.*',
             'grupos.nombre as grupo',
             'sexos.nombre as sexo',
@@ -22,7 +22,12 @@ class Persona extends Model
         ->join('grupos', 'grupos.id', '=', 'personas.grupo_id')
         ->join('sexos', 'sexos.id', '=', 'personas.sexo_id')
         ->join('estado_personas', 'estado_personas.id', '=', 'personas.estado_id')
-        ->leftJoin('boletos', 'boletos.id', '=', 'personas.boleto_id')
-        ->get();
+        ->leftJoin('boletos', 'boletos.id', '=', 'personas.boleto_id');
+
+        if ($estatus) {
+            $invitados = $invitados->where('personas.estado_id', $estatus);
+        }
+        
+        return $invitados->get();
     }
 }

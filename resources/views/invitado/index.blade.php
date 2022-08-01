@@ -2,6 +2,38 @@
 
 @section('content')
 <div class="container">
+    <div class="row mb-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <p>Invitados</p>
+                        <h1>{{ $invitados->count() }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <p>Confirmados</p>
+                        <h1 class="text-success">{{ $confirmados->count() }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <p>Pendientes</p>
+                        <h1 class="text-danger">{{ $pendientes->count() }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">

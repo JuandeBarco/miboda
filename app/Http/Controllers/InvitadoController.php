@@ -20,7 +20,9 @@ class InvitadoController extends Controller
         $invitados = Persona::get_invitados();
         $sexos = Sexo::all();
         $grupos = Grupo::all()->sortBy('nombre');
-        return view('invitado.index', compact(['invitados', 'sexos', 'grupos']));
+        $confirmados = Persona::get_invitados(2);
+        $pendientes = Persona::get_invitados(1);
+        return view('invitado.index', compact(['invitados', 'sexos', 'grupos', 'confirmados', 'pendientes']));
     }
 
     public function get_info($id)
