@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/test', function () {
+    return response()->json(['status' => 'success', 'message' => 'API is working']);
+});
+
+Route::get('/invitado/validar_entrada/{codigo}', [ApiController::class, 'validar_entrada']);
