@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InvitadoController;
+use App\Http\Controllers\SMSController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +35,9 @@ Route::delete('/personas/destroy', [InvitadoController::class, 'destroy'])->name
 Route::get('/personas/info/{id}', [InvitadoController::class, 'get_info'])->name('invitados.get_info');
 
 Route::put('/personas/confirmar_asistencia', [WelcomeController::class, 'confirmar_asistencia'])->name('invitados.confirmar_asistencia');
+
+// Rutas SMS
+Route::get('/sms/test', [SMSController::class, 'test'])->name('sms.test');
 
 Route::get('/clear-cache', function() {
     Artisan::call('config:clear');
