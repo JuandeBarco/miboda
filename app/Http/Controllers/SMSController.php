@@ -16,19 +16,25 @@ class SMSController extends Controller
 
     public function test()
     {
-        $basic  = new Basic("10dd1c9c", "f6Sc7JASBM4Y65Wg");
-        $client = new Client($basic);
-
-        $response = $client->sms()->send(
-            new SMS("523121113174", "Boda de Juandisis", 'Prueba de envío de SMS')
-        );
-        
-        $message = $response->current();
-        
-        if ($message->getStatus() == 0) {
-            echo "The message was sent successfully\n";
-        } else {
-            echo "The message failed with status: " . $message->getStatus() . "\n";
+        try {
+            $basic  = new Basic("10dd1c9c", "f6Sc7JASBM4Y65Wg");
+            $client = new Client($basic);
+    
+            $url = route('welcome.boletos', 'isisg');
+    
+            $response = $client->sms()->send(
+                new SMS("523121113174", "melescaso.com", "Haz clic en el siguiente enlace para consultar tus boletos para la boda de Juande e Isis: " . $url)
+            );
+            
+            $message = $response->current();
+            
+            if ($message->getStatus() == 0) {
+                return response()->json(['success' => true, 'message' => 'El mensaje fue enviado correctamente']);
+            } else {
+                return response()->json(['success' => false, 'message' => 'El mensaje no pudo ser enviado', 'error' => $message->getStatus()]);
+            }
+        } catch (\Throwable $th) {
+            return  $th->getMessage();
         }
     }
 }

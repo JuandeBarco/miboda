@@ -58,4 +58,17 @@ class WelcomeController extends Controller
             return response()->json(['success' => false, 'message' => 'Despacio velocista, a este paso podrías hackear la NASA. Tómale un screenshot y enviasela a Juande para catafixiarla por una chela']);
         }
     }
+
+    public function boletos($codigo)
+    {
+        $boleto = Boleto::where('codigo', $codigo)->first();
+        $boletos_grupo = Boleto::get_boletos($boleto->grupo_id);
+
+        return view('boletos', compact(['boletos_grupo']));
+    }
+
+    public function asistencia($codigo)
+    {
+        return $boleto = Boleto::where('codigo', $codigo)->first();
+    }
 }
