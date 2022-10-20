@@ -23,7 +23,7 @@ class SMSController extends Controller
             $url = route('welcome.boletos', 'isisg');
     
             $response = $client->sms()->send(
-                new SMS("523121113174", "melescaso.com", "Haz clic en el siguiente enlace para consultar tus boletos para la boda de Juande e Isis: " . $url)
+                new SMS("523121113174", "melescaso.com", "Tus boletos para la boda: " . $url)
             );
             
             $message = $response->current();

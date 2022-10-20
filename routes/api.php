@@ -23,4 +23,4 @@ Route::get('/test', function () {
     return response()->json(['status' => 'success', 'message' => 'API is working']);
 });
 
-Route::get('/invitado/validar_entrada/{codigo}', [ApiController::class, 'validar_entrada']);
+Route::get('/invitado/validar_entrada/{codigo}', [ApiController::class, 'validar_entrada'])->name('api.validar_entrada');

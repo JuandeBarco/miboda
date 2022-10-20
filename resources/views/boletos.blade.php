@@ -53,7 +53,7 @@
                     <div class="row g-0">
                         <div class="col-4">
                             <div class="visible-print text-center mt-3">
-                                {!! QrCode::size(100)->generate(route('welcome.asistencia', $boleto->codigo)); !!}
+                                {!! QrCode::size(100)->generate($boleto->codigo); !!}
                                 <p>{{ $boleto->codigo }}</p>
                             </div>
                         </div>
