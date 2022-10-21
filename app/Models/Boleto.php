@@ -44,8 +44,10 @@ class Boleto extends Model
             DB::raw('CONCAT(personas.nombre, " ", personas.primer_apellido, " ", personas.segundo_apellido) AS nombre_completo'),
             'personas.estado_id',
             'boletos.codigo',
+            'mesas.nombre AS mesa',
         )
         ->join('personas', 'personas.boleto_id', '=', 'boletos.id')
+        ->leftJoin('mesas', 'mesas.id', '=', 'personas.mesa_id')
         ->where('boletos.grupo_id', $grupo_id)
         ->get();
 

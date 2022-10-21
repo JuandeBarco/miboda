@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NotificacionMailer;
 use App\Models\Boleto;
 use App\Models\Grupo;
 use App\Models\Persona;
 use App\Models\Sexo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class InvitadoController extends Controller
 {
@@ -94,5 +96,17 @@ class InvitadoController extends Controller
         $persona->save();
 
         return back()->with('success', 'Invitado actualizado correctamente');
+    }
+
+    public function test_mail()
+    {
+
+        $data = [
+            'url' => route('welcome.boletos', 'isisg'),
+        ];
+
+        Mail::to('lextadz@gmail.com')->send(new NotificacionMailer($data));
+
+        return response()->json(['success' => 'Mail enviado']);
     }
 }

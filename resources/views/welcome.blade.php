@@ -490,6 +490,13 @@
 <script>
     $(document).ready(function(){
 
+      Swal.fire({
+        title: '¡Hola!',
+        text: 'Consulta tus boletos aquí',
+        icon: 'info',
+        confirmButtonText: '¡Entendido!'
+      });
+
         $('#form_confirmacion').on('submit', function(e){
             e.preventDefault();
             $('#form_registrar_btn').attr('disabled', true);

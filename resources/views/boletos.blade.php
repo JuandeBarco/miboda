@@ -36,16 +36,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: aliceblue;">
     <div class="container-fluid mt-4">
         <div class="row">
             <div class="text-center">
                 <h2 class="fw-bold">Boletos</h2>
                 @if($boletos_grupo->count() == 1)
-                    <p>Muestra tu boleto a la persona encargada de la recepción para ingresar a la fiesta</p>                    
+                    <p>Muestra tu boleto a la persona encargada de la recepción para ingresar a la fiesta.</p>                    
                 @else
-                    <p>Se debe escanear el boleto correspondiente a cada invitado para poder ingresar a la fiesta</p>
+                    <p>Se debe escanear el boleto correspondiente a cada invitado para poder ingresar a la fiesta.</p>
                 @endif
+                <p>Te recordamos que puedes ingresar al casino desde las <span class="fw-bold">08:30pm</span>, y los actos protocolarios inciarán desde las 09:00pm, por lo que agradecemos mucho tu puntualidad.</p>
             </div>
         @foreach($boletos_grupo as $boleto)
             <div class="col-md-4">
@@ -61,7 +62,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Boleto personal</h5>
                             <p class="card-text fw-bold">{{ $boleto->nombre_completo }}</p>
-                            <p class="card-text"><small class="text-muted">Mesa: 1</small></p>
+                            <p class="card-text"><small class="text-muted">{{ 'Mesa: '.$boleto->mesa }}</small></p>
                             </div>
                         </div>
                     </div>

@@ -41,6 +41,9 @@ Route::put('/personas/confirmar_asistencia', [WelcomeController::class, 'confirm
 // Rutas SMS
 Route::get('/sms/test', [SMSController::class, 'test'])->name('sms.test');
 
+// Rutas Email
+Route::get('/email/test', [InvitadoController::class, 'test_mail'])->name('email.test');
+
 Route::get('/clear-cache', function() {
     Artisan::call('config:clear');
     Artisan::call('cache:clear');

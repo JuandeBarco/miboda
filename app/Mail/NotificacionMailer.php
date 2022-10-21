@@ -11,14 +11,17 @@ class NotificacionMailer extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $subject = 'Boletos para la boda de Isis y Juande';
+    public $data = [];
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(array $data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -28,6 +31,6 @@ class NotificacionMailer extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('invitado.mail');
     }
 }
