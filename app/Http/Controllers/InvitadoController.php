@@ -109,4 +109,21 @@ class InvitadoController extends Controller
 
         return response()->json(['success' => 'Mail enviado']);
     }
+
+    public function send_mail()
+    {
+        // set the maximum execution time to no limit
+        set_time_limit(3600);
+        $data = Persona::get_emails();
+
+        foreach ($data as $key => $value) {
+            $data = [
+                'url' => route('welcome.boletos', $value->codigo),
+            ];
+
+            Mail::to($value->email)->send(new NotificacionMailer($data));
+        }
+
+        return response()->json(['success' => 'Mail enviado']);
+    }
 }

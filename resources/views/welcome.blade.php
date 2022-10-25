@@ -490,12 +490,25 @@
 <script>
     $(document).ready(function(){
 
+      @if($boleto != null)
       Swal.fire({
-        title: '¡Hola!',
-        text: 'Consulta tus boletos aquí',
+        title: '¿Quieres consultar tus boletos?',
+        text: 'Pulsa el botón "Ver boletos" para obtener tus boletos para entrar a la fiesta',
         icon: 'info',
-        confirmButtonText: '¡Entendido!'
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ver boletos',
+        cancelButtonText: 'No, gracias'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          let codigo = "{{ $boleto->codigo }}";
+          let url = "{{ route('welcome.boletos', ':codigo') }}";
+          url = url.replace(':codigo', codigo);
+          window.location.href = url;
+        }
       });
+      @endif
 
         $('#form_confirmacion').on('submit', function(e){
             e.preventDefault();
